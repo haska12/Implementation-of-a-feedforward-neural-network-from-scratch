@@ -55,8 +55,10 @@ pip install -r requirements.txt
 - [`src/NeuralNetwork.py`](src/NeuralNetwork.py): Simple neural network class (single hidden layer) and utilities.
 - [`examples/test FNN.ipynb`](examples/test%20FNN.ipynb): Jupyter notebook for MNIST training, feature extraction (PCA), visualization, and evaluation of the feedforward neural network.
 - [`examples/test nn.ipynb`](examples/test%20nn.ipynb): Jupyter notebook for testing the simple neural network.
-- [`examples/mnist_nnm_model.pkl`](examples/mnist_nnm_model.pkl): Saved trained model.
-- [`examples/pca_transformer.pkl`](examples/pca_transformer.pkl): Saved PCA transformer.
+- [`examples/models_FNN/mnist_nnm_model.pkl`](examples/models_FNN/mnist_nnm_model.pkl): Saved trained model fnn.
+-  [`examples/models_FNN/pca_transformer.pkl`](examples/models_FNN/pca_transformer.pkl): Saved PCA transformer from fnn.
+-  [`examples/model_nn/mnist_nn_model.pkl`](examples/model_nn/mnist_nn_model.pkl): Saved trained model nn.
+- [`examples/model_nn/pca_transformer.pkl`](examples/model_nn/pca_transformer.pkl): Saved PCA transformer from nn.
 
 ## Usage
 
