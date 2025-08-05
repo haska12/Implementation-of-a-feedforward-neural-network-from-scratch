@@ -4,7 +4,7 @@ from sklearn.preprocessing import OneHotEncoder
 this class is a simple neural network with  input_size input 1 hiden layer  of hidden_size number of neuron ,and output_size outpute
 """
 
-class NeuralNetwork:
+class SimpleNeuralNetwork:
     def __init__(self, input_size, hidden_size, output_size,activation_name='sigmoid'):
         self.input_size = input_size
         self.hidden_size = hidden_size
@@ -119,7 +119,7 @@ if __name__ == "__main__":
     X = np.array([[0, 0], [0, 1], [1, 0], [1, 1]])  
     y = np.array([[0], [1], [1], [0]])
 
-    nn = NeuralNetwork(input_size=2, hidden_size=4, output_size=2,activation_name='softmax')
+    nn = SimpleNeuralNetwork(input_size=2, hidden_size=4, output_size=2,activation_name='softmax')
     nn.train(X, y, epoch=3, learn_rate=0.1)
     X_trin = np.array([[5, 0], [0, 7], [8, 0], [8, 7]])  
     y_train = np.array([[0], [1], [1], [0]])

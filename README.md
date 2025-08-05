@@ -33,7 +33,7 @@ your_project/
 ├── NeuralNetwork/
 │   ├── __init__.py
 │   ├── Feedforward_Neural_Network.py
-│   └── NeuralNetwork.py
+│   └── Simple_Neural_Network.py
 │
 ├── LICENSE
 ├──
@@ -51,12 +51,14 @@ pip install -r requirements.txt
 
 ### Files
 
-- [`src/Feedforward Neural Network.py`](src/Feedforward%20Neural%20Network.py): Main feedforward neural network implementation and XOR example.
-- [`src/NeuralNetwork.py`](src/NeuralNetwork.py): Simple neural network class (single hidden layer) and utilities.
-- [`examples/test FNN.ipynb`](examples/test%20FNN.ipynb): Jupyter notebook for MNIST training, feature extraction (PCA), visualization, and evaluation of the feedforward neural network.
-- [`examples/test nn.ipynb`](examples/test%20nn.ipynb): Jupyter notebook for testing the simple neural network.
-- [`examples/mnist_nnm_model.pkl`](examples/mnist_nnm_model.pkl): Saved trained model.
-- [`examples/pca_transformer.pkl`](examples/pca_transformer.pkl): Saved PCA transformer.
+- [`NeuralNetwork/Simple_Neural_Network.py`](NeuralNetwork/Simple_Neural_Network.py): Simple neural network class (single hidden layer) and utilities.
+- [`NeuralNetwork/Feedforward_Neural_Network.py`](NeuralNetwork/Feedforward_Neural_Network.py): Main feedforward neural network implementation and XOR example.
+- [`examples/test_FNN.ipynb`](examples/test_FNN.ipynb): Jupyter notebook for MNIST training, feature extraction (PCA), visualization, and evaluation of the feedforward neural network.
+- [`examples/test_nn.ipynb`](examples/test_nn.ipynb): Jupyter notebook for testing the simple neural network.
+- [`examples/models_FNN/mnist_nnm_model.pkl`](examples/models_FNN/mnist_nnm_model.pkl): Saved trained feedforward neural network model.
+- [`examples/models_FNN/pca_transformer.pkl`](examples/models_FNN/pca_transformer.pkl): Saved PCA transformer for feedforward neural network.
+- [`examples/model_nn/mnist_nn_model.pkl`](examples/model_nn/mnist_nn_model.pkl): Saved trained simple neural network model.
+- [`examples/model_nn/pca_transformer.pkl`](examples/model_nn/pca_transformer.pkl): Saved PCA transformer for simple neural network.
 
 ## Usage
 
@@ -65,12 +67,21 @@ pip install -r requirements.txt
 
 ## Features
 
-- Data loading and preprocessing (normalization, flattening, scaling)
-- Feature extraction using PCA
-- One-hot encoding for categorical targets
-- Model training and evaluation (accuracy, MSE, confusion matrix, classification report)
-- Visualization of sample images and data distribution
-- Model saving and loading with robust error handling
+### SimpleNeuralNetwork
+
+- **Architecture:** Single hidden layer.
+- **Activation Functions:** Supports sigmoid and ReLU for the hidden layer.
+- **Optimization:** Basic gradient descent with fixed learning rate.
+- **Loss Function:** Mean Squared Error (MSE) for training progress.
+- **Training:** Early stopping based on a predefined error limit (`limite_error`).
+
+### FeedforwardNeuralNetwork
+
+- **Architecture:** Multiple hidden layers, configurable via a list of sizes.
+- **Activation Functions:** Supports relu and sigmoid for hidden layers, softmax for output layer.
+- **Optimization:** Advanced Adam optimizer.
+- **Loss Function:** Categorical cross-entropy for multi-class classification.
+- **Training:** Early stopping based on a predefined error limit (`limite_error`) and provides a history
 
 ## Documentation
 

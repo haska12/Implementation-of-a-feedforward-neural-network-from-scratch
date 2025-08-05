@@ -1,7 +1,7 @@
 import numpy as np
 
 
-class NeuralNetwork:
+class FeedforwardNeuralNetwork:
     def __init__(self, input_size,hidden_layers, output_size,activation_hidden='relu',activation_output='softmax',optimisation_algorithm_name="adam"):
         self.input_size = input_size
         self.output_size = output_size
@@ -184,7 +184,7 @@ if __name__ == "__main__":
     X = np.array([[0, 0], [0, 1], [1, 0], [1, 1]])  
     y = np.array([[0], [1], [1], [0]])
 
-    nn = NeuralNetwork(input_size=2, hidden_layers=[4,16], output_size=2)  #  2 layers 4' size of 1 hidden layer 16 size of 2 hidden layer 
+    nn = FeedforwardNeuralNetwork(input_size=2, hidden_layers=[4,16], output_size=2)  #  2 layers 4' size of 1 hidden layer 16 size of 2 hidden layer 
     loss_history=nn.train(X, y, epoch=10000, learn_rate=0.00001,desplay_fr=500)
 
     
