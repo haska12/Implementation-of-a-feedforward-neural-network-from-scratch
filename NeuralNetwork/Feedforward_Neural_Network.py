@@ -119,7 +119,10 @@ class FeedforwardNeuralNetwork:
     def backward_Gradient_simple  (self, activations, pre_activations, y_true, learn_rate):
         """optimisation Gradient """
         num_samples = y_true.shape[0] 
-        delta = activations[-1] - y_true #error output
+        if self.activation_output=='softmax':
+            delta = activations[-1] - y_true #error output
+        else:
+            delta=np.dot((activations[-1] - y_true ),self.activation_derivative(pre_activations[-1],self.activation_output))
         #Loop over layers in reverse 
         for i in range(self.num_layers - 1, -1, -1): 
             dW = np.dot(activations[i].T, delta) / num_samples #Gradient dW = ∂L/∂W[i]/ dL/dW = (input^T) × (error) input=activations[i]  delta=error
