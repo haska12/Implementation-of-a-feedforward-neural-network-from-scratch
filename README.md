@@ -51,6 +51,7 @@ pip install -r requirements.txt
 
 ### Files
 
+<<<<<<< HEAD
 - [`NeuralNetwork/Simple_Neural_Network.py`](NeuralNetwork/Simple_Neural_Network.py): Simple neural network class (single hidden layer) and utilities.
 - [`NeuralNetwork/Feedforward_Neural_Network.py`](NeuralNetwork/Feedforward_Neural_Network.py): Main feedforward neural network implementation and XOR example.
 - [`examples/test_FNN.ipynb`](examples/test_FNN.ipynb): Jupyter notebook for MNIST training, feature extraction (PCA), visualization, and evaluation of the feedforward neural network.
@@ -59,6 +60,16 @@ pip install -r requirements.txt
 - [`examples/models_FNN/pca_transformer.pkl`](examples/models_FNN/pca_transformer.pkl): Saved PCA transformer for feedforward neural network.
 - [`examples/model_nn/mnist_nn_model.pkl`](examples/model_nn/mnist_nn_model.pkl): Saved trained simple neural network model.
 - [`examples/model_nn/pca_transformer.pkl`](examples/model_nn/pca_transformer.pkl): Saved PCA transformer for simple neural network.
+=======
+- [`src/Feedforward Neural Network.py`](src/Feedforward%20Neural%20Network.py): Main feedforward neural network implementation and XOR example.
+- [`src/NeuralNetwork.py`](src/NeuralNetwork.py): Simple neural network class (single hidden layer) and utilities.
+- [`examples/test FNN.ipynb`](examples/test%20FNN.ipynb): Jupyter notebook for MNIST training, feature extraction (PCA), visualization, and evaluation of the feedforward neural network.
+- [`examples/test nn.ipynb`](examples/test%20nn.ipynb): Jupyter notebook for testing the simple neural network.
+- [`examples/models_FNN/mnist_nnm_model.pkl`](examples/models_FNN/mnist_nnm_model.pkl): Saved trained model fnn.
+-  [`examples/models_FNN/pca_transformer.pkl`](examples/models_FNN/pca_transformer.pkl): Saved PCA transformer from fnn.
+-  [`examples/model_nn/mnist_nn_model.pkl`](examples/model_nn/mnist_nn_model.pkl): Saved trained model nn.
+- [`examples/model_nn/pca_transformer.pkl`](examples/model_nn/pca_transformer.pkl): Saved PCA transformer from nn.
+>>>>>>> 43be36ce25cb14fabdf7f11a343bc3344b0767f4
 
 ## Usage
 
